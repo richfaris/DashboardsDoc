@@ -1,0 +1,9 @@
+# Build output (regenerate with ./build-docs.sh)
+build/
+
+# macOS
+.DS_Store
+
+# Editor / IDE
+*.bak
+*.swp
