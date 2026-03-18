@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Dashboard Datasheet — BriteCore RealTime Dashboards</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="datasheet.css" />
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Dashboard Datasheet — BriteCore RealTime
+Dashboards</h1>
+<p class="subtitle">BriteCore RealTime Dashboards — value at a
+glance</p>
+</header>
+<div class="datasheet-cover">
+<p><strong>Purpose:</strong> Help CSMs and customers quickly see
+<em>what</em> each dashboard offers and <em>why</em> each chart matters
+for the role it serves. For full controls, columns, and screenshots, use
+the detailed documentation set.</p>
+<p><strong>Where to open:</strong> <strong>Reports → Dashboards</strong>
+in BriteCore.</p>
+<div class="print-hint">
+<strong>Landscape PDF:</strong> <code>brew install weasyprint</code>
+then <code>./build-datasheet.sh</code> →
+<code>build/Dashboard-Datasheet.pdf</code>. No Homebrew? <code>pip3
+install weasyprint</code> then <code>python3 datasheet-pdf.py</code>.
+</div>
+<hr />
+</div>
+<section id="claims-manager-dashboard"
+class="dashboard-sheet dashboard-1">
+<h2>Claims Manager Dashboard</h2>
+<p><strong>Persona:</strong> Claims leadership and operations.
+<strong>One-line value:</strong> See where loss concentrates, balance
+workload, and hold vendors accountable without spreadsheets.</p>
+<h3 id="tab-summary">Tab: Summary</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Chart / table</th>
+<th>Why it matters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Losses incurred by category (main table)</strong></td>
+<td>Answers where loss is coming from by category, line, and policy type
+in one sortable view. Use it to allocate adjusters, spot trends, and
+brief leadership with numbers everyone can follow.</td>
+</tr>
+<tr>
+<td><strong>Top 10 agencies by gross losses paid</strong></td>
+<td>Surfaces which agencies drive the most paid loss so you can target
+reviews, training, or conversations with underwriting and distribution.
+Drill-down supports root-cause follow-up.</td>
+</tr>
+<tr>
+<td><strong>Map of gross losses incurred</strong></td>
+<td>Shows geographic concentration of loss for cat planning, staffing,
+and vendor placement. Essential when you need to explain <em>where</em>
+loss is hitting, not just how much.</td>
+</tr>
+<tr>
+<td><strong>Top 10 claims counts (by insured)</strong></td>
+<td>Highlights high-frequency claimants for fraud or severity review and
+helps explain frequency drivers to leadership.</td>
+</tr>
+<tr>
+<td><strong>Top 10 total gross losses paid (by insured)</strong></td>
+<td>Surfaces largest paid-loss insureds for large-loss and reserve
+reviews. Prioritizes who needs senior attention first.</td>
+</tr>
+<tr>
+<td><strong>Loss triangle / development (where shown)</strong></td>
+<td>Supports reserve and development conversations by showing how losses
+emerge over time. Helps validate reserving and reporting
+narratives.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="tab-detail">Tab: Detail</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Chart / table</th>
+<th>Why it matters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Claim details (full table)</strong></td>
+<td>One row per claim with reserves, payments, reinsurance, and
+assignment. Answers “what happened on this claim?” for audits,
+large-loss reviews, and leadership questions without jumping between
+screens.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="tab-contractor-tracking">Tab: Contractor tracking</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Chart / table</th>
+<th>Why it matters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Contractor tracking (full table)</strong></td>
+<td>Ties contractors, attorneys, and public adjusters to claim
+financials. Lets you manage vendor exposure, control leakage, and report
+on outside-rep patterns the carrier cares about.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+</section>
+<section id="ceo-dashboard" class="dashboard-sheet dashboard-2">
+<h2>CEO Dashboard</h2>
+<p><strong>Persona:</strong> Executive leadership. <strong>One-line
+value:</strong> Board-ready profitability, retention, and momentum
+without waiting for quarter-end reports.</p>
+<h3 id="tab-profitability">Tab: Profitability</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Chart / table</th>
+<th>Why it matters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Direct loss ratio year-over-year comparison
+(KPI)</strong></td>
+<td>Shows whether underwriting and pricing are improving or slipping
+year over year. Owns the profitability narrative for the board in a
+single comparison.</td>
+</tr>
+<tr>
+<td><strong>Year-to-date loss ratio (KPI)</strong></td>
+<td>The direct answer to “How are we doing against target?” Pairs
+current performance with change vs. prior period for investor-style
+discussions.</td>
+</tr>
+<tr>
+<td><strong>Direct loss ratio by policy type</strong></td>
+<td>Reveals which products beat or miss target so you can direct
+strategy—lean in, reprice, or tighten guidelines—with specificity.</td>
+</tr>
+<tr>
+<td><strong>Loss ratio by area (map)</strong></td>
+<td>Geographic view of where you’re winning or losing on ratio. Supports
+territory, distribution, and cat strategy in one visual.</td>
+</tr>
+<tr>
+<td><strong>Agency profitability (table)</strong></td>
+<td>Loss paid and incurred by agency. Makes partner and incentive
+conversations data-driven instead of anecdotal.</td>
+</tr>
+<tr>
+<td><strong>Loss ratio by county / by zip (tables)</strong></td>
+<td>Finer geography for pricing, underwriting, or marketing focus when
+state- or region-level views aren’t enough.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="tab-retention">Tab: Retention</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Chart / table</th>
+<th>Why it matters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Retention rate (gauge)</strong></td>
+<td>Single metric for “Are we keeping the book?”—core to growth and
+stability messaging for board and investors.</td>
+</tr>
+<tr>
+<td><strong>In-force change rate (gauge)</strong></td>
+<td>Net story of issues, cancellations, and reinstatements so you can
+speak to whether the book is growing or shrinking.</td>
+</tr>
+<tr>
+<td><strong>Summary by line of business (table)</strong></td>
+<td>Which lines retain vs. churn. Aligns strategy and resources with
+where the book is actually moving.</td>
+</tr>
+<tr>
+<td><strong>Count of policy changes (bar chart)</strong></td>
+<td>Plain-language story of issued, canceled, retained, and reinstated
+counts in the period.</td>
+</tr>
+<tr>
+<td><strong>Retention rate by county / Issued rate by county
+(maps)</strong></td>
+<td>Where you keep business vs. where new business lands geographically.
+Informs territory investment and weak-market fixes.</td>
+</tr>
+<tr>
+<td><strong>Detail data table (policy-level)</strong></td>
+<td>Drill-down proof for retention or issuance stories—policies,
+agencies, and premium movement when someone asks “show me.”</td>
+</tr>
+<tr>
+<td><strong>In-force change by county / Premium change by line
+(bars)</strong></td>
+<td>County-level book movement and line-level premium impact tie
+retention to revenue.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="tab-current-events-30-day">Tab: Current events (30-day)</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Chart / table</th>
+<th>Why it matters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>30-day policies quoted vs. issued</strong></td>
+<td>Conversion by line before it shows up in quarterly results. Surfaces
+funnel leaks early for underwriting and distribution.</td>
+</tr>
+<tr>
+<td><strong>Quote-to-issue ratio (gauge)</strong></td>
+<td>One number for quote conversion; filterable by agency to hold
+partners accountable.</td>
+</tr>
+<tr>
+<td><strong>30-day change in in-force premium</strong></td>
+<td>Recent premium momentum by line so you act on trends now, not after
+month-end.</td>
+</tr>
+<tr>
+<td><strong>30-day policies issued, canceled, reinstated</strong></td>
+<td>Current book-movement story in counts—address cancellations or
+celebrate issuance while it’s fresh.</td>
+</tr>
+<tr>
+<td><strong>30-day premiums issued, canceled, reinstated</strong></td>
+<td>Same story in dollars so revenue impact is obvious for leadership
+updates.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="tab-agency-profile">Tab: Agency profile</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Chart / table</th>
+<th>Why it matters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Change in-force premium by line</strong></td>
+<td>Agency-scoped premium change by product line. Backs partner reviews
+and incentive discussions with facts.</td>
+</tr>
+<tr>
+<td><strong>30-day policies / premiums issued, canceled,
+reinstated</strong></td>
+<td>Agency-level version of Current Events—praise, coach, or intervene
+with data for that partner.</td>
+</tr>
+<tr>
+<td><strong>Policies canceled / reinstated (past 30 days)</strong></td>
+<td>Which policies left or returned so you can discuss price, service,
+or non-pay with the agency.</td>
+</tr>
+<tr>
+<td><strong>Policies pending cancellation</strong></td>
+<td>Early warning on at-risk premium before cancellations hit
+results.</td>
+</tr>
+<tr>
+<td><strong>Policies issued past 30 days (table)</strong></td>
+<td>Proof of what the agency is writing—recognition for producers and
+evidence for carrier reporting.</td>
+</tr>
+<tr>
+<td><strong>30-day new losses incurred (table)</strong></td>
+<td>New loss activity tied to that agency for informed talks with
+underwriting and claims.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+</section>
+<section id="agency-principal-dashboard"
+class="dashboard-sheet dashboard-3">
+<h2>Agency Principal Dashboard</h2>
+<p><strong>Persona:</strong> Agency principal / owner. <strong>One-line
+value:</strong> Run the agency like a business—commissions, production,
+and receivables in one place.</p>
+<h3 id="tab-summary-1">Tab: Summary</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Chart / table</th>
+<th>Why it matters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Commission paid YTD</strong></td>
+<td>Instant answer to “What have we earned this year?” for planning and
+cash expectations.</td>
+</tr>
+<tr>
+<td><strong>Commission paid over time</strong></td>
+<td>Year vs. prior year and change—spot improvement or decline before
+year-end.</td>
+</tr>
+<tr>
+<td><strong>3-year M2M policy data (table)</strong></td>
+<td>Month-by-month book and premium movement. Explains seasonality and
+supports carrier conversations.</td>
+</tr>
+<tr>
+<td><strong>3-year M2M loss data (table)</strong></td>
+<td>Loss and loss ratio by month—links production to combined-ratio
+story with the carrier.</td>
+</tr>
+<tr>
+<td><strong>3-year Y2Y policy / loss data (tables)</strong></td>
+<td>Annual lens for growth planning and year-over-year reviews with
+carriers.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="tab-commissions">Tab: Commissions</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Chart / table</th>
+<th>Why it matters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Total commissions by line of business (pie)</strong></td>
+<td>Which lines drive commission income so incentives align with growth
+priorities.</td>
+</tr>
+<tr>
+<td><strong>Top 10 agents by commission (bar)</strong></td>
+<td>Recognize top producers and identify who needs coaching—fair,
+visible, exportable.</td>
+</tr>
+<tr>
+<td><strong>Commission details (table)</strong></td>
+<td>Row-level audit trail for payroll, carrier reporting, and producer
+disputes.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="tab-production">Tab: Production</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Chart / table</th>
+<th>Why it matters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Quoting activities by agency (table)</strong></td>
+<td>Funnel counts (started through issued/canceled) so you fix
+bottlenecks and grow issued business.</td>
+</tr>
+<tr>
+<td><strong>Quote conversion by agency (table)</strong></td>
+<td>Who converts quotes to policies—target training and investment where
+conversion pays off.</td>
+</tr>
+<tr>
+<td><strong>M2M in-force count and premium by agency</strong></td>
+<td>Book growth by agency and month vs. targets and carrier
+expectations.</td>
+</tr>
+<tr>
+<td><strong>Quote status by zip code (table)</strong></td>
+<td>Geographic concentration of quote activity for marketing and
+producer deployment.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="tab-payments-due">Tab: Payments due</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Chart / table</th>
+<th>Why it matters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Payment due status (bar chart)</strong></td>
+<td>Due within 30 days vs. overdue vs. not due—prioritize collections
+and protect cash flow.</td>
+</tr>
+<tr>
+<td><strong>Policy billing status (bar chart)</strong></td>
+<td>How many accounts are paid, due, to-be-billed, or cancelled—focus
+effort on the right receivables.</td>
+</tr>
+<tr>
+<td><strong>Line of business (bar chart)</strong></td>
+<td>Which lines drive receivables exposure so collections match where
+the dollars are.</td>
+</tr>
+<tr>
+<td><strong>Policies with current payments due (table)</strong></td>
+<td>Action list: who owes what, when, and how much—day-to-day agency
+collections.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+</section>
+<section id="cfo-dashboard" class="dashboard-sheet dashboard-4">
+<h2>CFO Dashboard</h2>
+<p><strong>Persona:</strong> Finance leadership. <strong>One-line
+value:</strong> Transactions, cash, payments, and policy changes for
+forecast, reconciliation, and close.</p>
+<h3 id="tab-policy-transactions">Tab: Policy transactions</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Chart / table</th>
+<th>Why it matters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Processed transactions by LOB / policy type (pivot
+table)</strong></td>
+<td>Premium and count by new business, endorsements, and cancellations.
+Reconciles written premium and explains revenue movement.</td>
+</tr>
+<tr>
+<td><strong>New business premium by month (bar chart)</strong></td>
+<td>Top-line trend by month and line for forecasting and board or
+auditor narrative.</td>
+</tr>
+<tr>
+<td><strong>Total premium-bearing transactions (bar chart)</strong></td>
+<td>One-period view of what moved premium—complements the detail table
+for variance explanation.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="tab-policy-transaction-details">Tab: Policy transaction
+details</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Chart / table</th>
+<th>Why it matters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Policy transaction details (table)</strong></td>
+<td>Row-level audit trail for every transaction—verification, audit
+support, and billing reconciliation.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="tab-cash-summary">Tab: Cash summary</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Chart / table</th>
+<th>Why it matters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Payment amount by month (line)</strong></td>
+<td>Cash-in trend for funding plans, bank matching, and leadership cash
+commentary.</td>
+</tr>
+<tr>
+<td><strong>Losses incurred (table)</strong></td>
+<td>Loss by category and line for reserve context and alignment with
+claims.</td>
+</tr>
+<tr>
+<td><strong>Top 10 agencies by payment amount</strong></td>
+<td>Which channels bring the most cash in—forecasting and reconciliation
+by distribution.</td>
+</tr>
+<tr>
+<td><strong>Top 10 agencies by losses paid</strong></td>
+<td>Loss payout by agency—ties cash out to partners for loss-funding
+discussions.</td>
+</tr>
+<tr>
+<td><strong>Gross incurred losses on map</strong></td>
+<td>Geographic loss concentration for cat and reserve
+conversations.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="tab-cash-details">Tab: Cash details</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Chart / table</th>
+<th>Why it matters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Payment details (table)</strong></td>
+<td>Payments tied to policy, channel, and status—fine-grained cash
+reconciliation.</td>
+</tr>
+<tr>
+<td><strong>Losses details (table)</strong></td>
+<td>Claim-level loss with category and geography—variance and audit
+support.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="tab-payments">Tab: Payments</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Chart / table</th>
+<th>Why it matters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Payments hierarchical (table)</strong></td>
+<td>Revenue mix by agency, line, and payment method—channel cost
+planning and “how we collect premium” story.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="tab-policies-changes">Tab: Policies changes</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Chart / table</th>
+<th>Why it matters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Policies changes (table)</strong></td>
+<td>Every status and premium change by policy—month-end close, in-force
+reconciliation, and auditor walkthroughs.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+</section>
+<section id="underwriting-manager-dashboard"
+class="dashboard-sheet dashboard-5">
+<h2>Underwriting Manager Dashboard</h2>
+<p><strong>Persona:</strong> Underwriting leadership. <strong>One-line
+value:</strong> Book composition, loss concentration, and evidence for
+guidelines and pricing.</p>
+<h3 id="tab-policy-and-premium-information">Tab: Policy and premium
+information</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Chart / table</th>
+<th>Why it matters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Policy count by LOB / policy type</strong></td>
+<td>How the book is built—spot concentration and capacity issues before
+they hurt results.</td>
+</tr>
+<tr>
+<td><strong>Premium by LOB / policy type</strong></td>
+<td>Where premium and risk sit—align underwriting focus with dollars,
+not just policy counts.</td>
+</tr>
+<tr>
+<td><strong>Claims count by contact (bar chart)</strong></td>
+<td>High-frequency insureds for guideline, pricing, or non-renewal
+decisions.</td>
+</tr>
+<tr>
+<td><strong>Repeat offenders in time (line chart)</strong></td>
+<td>Loss history over time for selected insureds—defensible non-renewal
+and rate actions.</td>
+</tr>
+<tr>
+<td><strong>Loss ratio by zip code (map)</strong></td>
+<td>Worst-performing geographies for territory rules and pricing
+overlays.</td>
+</tr>
+<tr>
+<td><strong>Detail table (by zip)</strong></td>
+<td>Policies, agencies, and underwriters in a selected zip—actionable
+follow-up in hot spots.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="tab-claim-information">Tab: Claim information</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Chart / table</th>
+<th>Why it matters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Claims details by LOB / policy type YTD
+(table)</strong></td>
+<td>Paid, incurred, LAE, and loss ratio by product—evidence for
+guideline and pricing changes with claims.</td>
+</tr>
+<tr>
+<td><strong>Claims details by agency YTD (table)</strong></td>
+<td>Same metrics by agency—see which partners drive loss experience and
+align incentives.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="tab-claims-changes">Tab: Claims changes</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Chart / table</th>
+<th>Why it matters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Claims changes (tab)</strong></td>
+<td>Tracks how claims and reserves move over time—connect underwriting
+actions to loss development and support leadership explanations.
+<em>(Visuals: see product UI; full chart list in progress in detailed
+doc.)</em></td>
+</tr>
+</tbody>
+</table>
+<hr />
+</section>
+<section id="full-documentation" class="datasheet-footer">
+<h2>Full documentation</h2>
+<ul>
+<li><strong>Index &amp; chart options:</strong> <a
+href="dashboards.md">dashboards.md</a><br />
+</li>
+<li><strong>Deep dives:</strong> Claims Manager, CEO, Agency Principal,
+CFO, Underwriting Manager dashboard <code>.md</code> files in this
+folder.</li>
+</ul>
+<p><em>Dashboard Datasheet — BriteCore RealTime Dashboards. Condensed
+for CSM and customer enablement.</em></p>
+</section>
+</body>
+</html>

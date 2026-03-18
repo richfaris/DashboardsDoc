@@ -1,5 +1,5 @@
-# Build output (regenerate with ./build-docs.sh)
-build/
+# Build outputs are committed for easy download from GitHub.
+# Regenerate: ./build-docs.sh && ./build-datasheet.sh
 
 # macOS
 .DS_Store
