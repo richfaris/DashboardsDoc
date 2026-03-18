@@ -31,12 +31,22 @@ RESOURCE_PATH=".:$(pwd):$(pwd)/$BUILD_DIR"
 
 echo "Building combined document from ${#INPUTS[@]} files..."
 
-# DOCX: preserves links as internal bookmarks; images embedded
+# DOCX: preserves links as internal bookmarks; images embedded.
+# Lua filter sets table column widths (narrow Column, wide Description) to reduce wrapping.
+# Optional: use a reference.docx with "Table" style at 9pt for smaller table text and fewer wraps.
+#   Create: build once, open the output DOCX in Word, set "Table" style to 9pt, Save As reference.docx here.
+#   Then:   REFERENCE_DOC=reference.docx ./build-docs.sh
+REFERENCE_OPTS=()
+if [ -n "${REFERENCE_DOC:-}" ] && [ -f "$REFERENCE_DOC" ]; then
+  REFERENCE_OPTS=(--reference-doc="$REFERENCE_DOC")
+fi
 pandoc "${INPUTS[@]}" \
   -o "$BUILD_DIR/BriteCore-Dashboards-Doc.docx" \
   --resource-path="$RESOURCE_PATH" \
   --from=markdown \
   --to=docx \
+  --lua-filter=docx-table-widths.lua \
+  "${REFERENCE_OPTS[@]}" \
   --toc \
   --toc-depth=3 \
   --metadata title="BriteCore RealTime Dashboards"

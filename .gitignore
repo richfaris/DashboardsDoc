@@ -4,6 +4,9 @@ build/
 # macOS
 .DS_Store
 
+# Export sample CSVs (not committed)
+*.csv
+
 # Editor / IDE
 *.bak
 *.swp
