@@ -2,8 +2,6 @@
 
 **Location:** Reports → Dashboards → **CEO** (selector: Claims Manager, CEO, Agency Principal, CFO, Underwriting Manager)
 
-**Dashboards URL:** `https://yoursitename.britecore.com/britecore/reports/analytic_dashboards`
-
 The CEO dashboard gives an executive view of profitability, retention, current events, and agency profile. It has four tabs: **Profitability**, **Retention**, **Current Events**, and **Agency Profile**. On every chart, **filtering**, **sorting**, **export to CSV or Excel**, and **expand to full screen** are available---see [Chart options (all dashboards)](dashboards.md#chart-options-all-dashboards) in the main doc.
 
 **Why it matters for you:** Answer the board's questions on profitability, retention, and agency performance without waiting for reports. See what's working and where to act---from loss ratio by line and geography to the last 30 days of quotes, issues, and cancellations---so strategy is grounded in current data.

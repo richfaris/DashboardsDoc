@@ -1,10 +1,10 @@
 # BriteCore RealTime Dashboards
 
-BriteCore RealTime Dashboards are role-based analytic views under **Reports → Dashboards**. Each dashboard provides filters, tables, and visuals for a specific audience. Data is refreshed based on the selected date ranges and filters.
+**How to use this document:** The sections below give a shared overview (why these dashboards exist, [chart options](#chart-options-all-dashboards), and an [index](#dashboard-index)). After that, each dashboard has its own chapter with tabs, charts, and column definitions. Open dashboards in BriteCore from **Reports** → **Dashboards** and pick the role from the selector at the top.
 
-**How to open:** In BriteCore, go to **Reports** → **Dashboards**. Use the dashboard selector at the top to choose **Claims Manager**, **CEO**, **Agency Principal**, **CFO**, or **Underwriting Manager**.
+BriteCore RealTime Dashboards are role-based analytic views. Each dashboard provides filters, tables, and visuals for a specific audience. Data reflects the selected date ranges and filters.
 
-**Dashboards URL:** `https://yoursitename.britecore.com/britecore/reports/analytic_dashboards`
+**CSM / customer quick reference:** [Dashboard Datasheet](dashboard-datasheet.md) — one-page summary of every tab and chart with why it matters per persona. Generate styled HTML: `./build-datasheet.sh` → `build/Dashboard-Datasheet.html`.
 
 ------------------------------------------------------------------------
 

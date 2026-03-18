@@ -2,8 +2,6 @@
 
 **Location:** Reports → Dashboards → **Agency Principal** (selector: Claims Manager, CEO, Agency Principal, CFO, Underwriting Manager)
 
-**Dashboards URL:** `https://yoursitename.britecore.com/britecore/reports/analytic_dashboards`
-
 The Agency Principal dashboard gives an **agency-focused view** of commissions, production, payments due, and summary metrics. It has four tabs: **Summary**, **Commissions**, **Production**, and **Payments Due**. On every chart, **filtering**, **sorting**, **export to CSV or Excel**, and **expand to full screen** are available---see [Chart options (all dashboards)](dashboards.md#chart-options-all-dashboards) in the main doc.
 
 **Why it matters for you:** Run your agency like a business. See commissions, production, and what's due from policyholders in one place---so you can grow the book, reward the right producers, and keep cash flow healthy without jumping between reports.

@@ -46,20 +46,25 @@ pandoc "${INPUTS[@]}" \
   --from=markdown \
   --to=docx \
   --lua-filter=docx-table-widths.lua \
+  --lua-filter=docx-pagebreaks.lua \
   "${REFERENCE_OPTS[@]}" \
   --toc \
   --toc-depth=3 \
   --metadata title="BriteCore RealTime Dashboards"
 
-echo "  -> $BUILD_DIR/BriteCore-Dashboards-Doc.docx"
+python3 fix-docx-table-rows.py "$BUILD_DIR/BriteCore-Dashboards-Doc.docx"
+
+echo "  -> $BUILD_DIR/BriteCore-Dashboards-Doc.docx (page breaks + table row keep-together)"
 
 # CSS to shrink images to 50% in HTML output (written into build so href resolves)
 mkdir -p "$BUILD_DIR"
 cat > "$BUILD_DIR/doc-images.css" << 'EOF'
 img { max-width: 50%; height: auto; }
 EOF
+cp -f doc-print.css "$BUILD_DIR/doc-print.css" 2>/dev/null || true
 
 # HTML: single file with everything embedded (images + CSS). Good for sharing or Print → Save as PDF.
+# doc-print.css: new page per dashboard + avoid splitting table rows when printing / Save as PDF
 pandoc "${INPUTS[@]}" \
   -o "$BUILD_DIR/BriteCore-Dashboards-Doc.html" \
   --resource-path="$RESOURCE_PATH" \
@@ -71,6 +76,7 @@ pandoc "${INPUTS[@]}" \
   --toc-depth=3 \
   --metadata title="BriteCore RealTime Dashboards" \
   --css="doc-images.css" \
+  --css="doc-print.css" \
   -V margin-top=20 -V margin-bottom=20
 
 echo "  -> $BUILD_DIR/BriteCore-Dashboards-Doc.html (single file, images and CSS embedded)"

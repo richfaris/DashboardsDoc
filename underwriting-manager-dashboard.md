@@ -2,8 +2,6 @@
 
 **Location:** Reports → Dashboards → **Underwriting Manager** (selector: Claims Manager, CEO, Agency Principal, CFO, Underwriting Manager)
 
-**URL (product demo):** `https://yoursitename.britecore.com/britecore/reports/analytic_dashboards`
-
 The Underwriting Manager dashboard focuses on **policy and premium information**, **claim information**, and **claims changes**. It has three tabs: **Policy and Premium Information**, **Claim Information**, and **Claims Changes**. On every chart, **filtering**, **sorting**, **export to CSV or Excel**, and **expand to full screen** are available---see [Chart options (all dashboards)](dashboards.md#chart-options-all-dashboards) in the main doc.
 
 **Why it matters for you:** Balance growth and risk with clear views of where premium and claims concentrate. See book composition, high-loss zip codes, repeat claimants, and loss ratios by line and agency---so you can sharpen guidelines, pricing, and underwriting focus without guessing.
@@ -123,4 +121,4 @@ Same metric columns as Table 1, with one row per **agency** (e.g. A-1 Insurance 
 
 ------------------------------------------------------------------------
 
-*Documentation based on yoursitename.britecore.com and live data. Policy and Premium Information and Claim Information documented with full table columns; Claims Changes in progress.*
+*Documentation based on the product demo environment and live data. Policy and Premium Information and Claim Information documented with full table columns; Claims Changes in progress.*

@@ -2,8 +2,6 @@
 
 **Location:** Reports → Dashboards → **CFO** (selector: Claims Manager, CEO, Agency Principal, CFO, Underwriting Manager)
 
-**Dashboards URL:** `https://yoursitename.britecore.com/britecore/reports/analytic_dashboards`
-
 The CFO dashboard focuses on **policy transactions, cash, payments, and policy changes**. It has six tabs: **Policy Transactions**, **Policy Transaction Details**, **Cash Summary**, **Cash Details**, **Payments**, and **Policies Changes**. On every chart, **filtering**, **sorting**, **export to CSV or Excel**, and **expand to full screen** are available---see [Chart options (all dashboards)](dashboards.md#chart-options-all-dashboards) in the main doc.
 
 **Why it matters for you:** Own the numbers in one place. From new business and endorsements to cash and payments, you get what you need for forecasting, reconciliation, and month-end close---without chasing spreadsheets or multiple systems.

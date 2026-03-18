@@ -1,0 +1,30 @@
+/* Print / Save as PDF: dashboard chapters on new pages; table rows stay together */
+
+@media print {
+  h1#claims-manager-dashboard,
+  h1#ceo-dashboard,
+  h1#agency-principal-dashboard,
+  h1#cfo-dashboard,
+  h1#underwriting-manager-dashboard {
+    page-break-before: always;
+    break-before: page;
+    padding-top: 0;
+  }
+
+  /* Keep each table row on one page (column-definition tables) */
+  table tbody tr {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  /* Keep a chart block with its heading when possible */
+  h3, h4 {
+    page-break-after: avoid;
+    break-after: avoid;
+  }
+
+  img {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+}

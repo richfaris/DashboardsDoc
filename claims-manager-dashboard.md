@@ -2,8 +2,6 @@
 
 **Location:** Reports → Dashboards → **Claims Manager** (selector: Claims Manager, CEO, Agency Principal, CFO, Underwriting Manager)
 
-**URL (product demo):** `https://yoursitename.britecore.com/britecore/reports/analytic_dashboards`
-
 The Claims Manager dashboard gives a high-level view of claims performance and losses. It has three tabs: **Summary**, **Detail**, and **Contractor Tracking**. On every chart, **filtering**, **sorting**, **export to CSV or Excel**, and **expand to full screen** are available---see [Chart options (all dashboards)](dashboards.md#chart-options-all-dashboards) in the main doc.
 
 **Why it matters for you:** Run a tighter claims operation without digging through spreadsheets. See where losses concentrate so you can focus resources and report up with confidence, balance adjuster workloads, and hold agencies and vendors accountable---all from one place.
