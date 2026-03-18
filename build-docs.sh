@@ -81,6 +81,8 @@ pandoc "${INPUTS[@]}" \
 
 echo "  -> $BUILD_DIR/BriteCore-Dashboards-Doc.html (single file, images and CSS embedded)"
 echo ""
+echo "Hierarchical help-site DOCX (overview + 5 dashboards): ./build-hierarchical-docx.sh → build/hierarchical-docx/*.docx"
+echo ""
 echo "Done. Share or open the HTML anywhere; use File → Print → Save as PDF for a PDF with links."
 
 # Optional: direct PDF if an engine is available

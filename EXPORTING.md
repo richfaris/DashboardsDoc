@@ -23,6 +23,30 @@ Outputs go into the **`build/`** folder:
 
 You can move or share the whole **`build/`** folder; the HTML will still show all images.
 
+### Hierarchical DOCX (help site — 6 files)
+
+For navigation with **separate pages per dashboard**, run:
+
+```bash
+chmod +x build-hierarchical-docx.sh   # once
+./build-hierarchical-docx.sh
+```
+
+Outputs: **`build/hierarchical-docx/`**
+
+| File | Contents |
+|------|----------|
+| `BriteCore-Dashboards-Main.docx` | Overview, chart options, index with links to each dashboard file |
+| `BriteCore-Dashboards-Claims-Manager.docx` | Claims Manager only |
+| `BriteCore-Dashboards-CEO.docx` | CEO only |
+| `BriteCore-Dashboards-Agency-Principal.docx` | Agency Principal only |
+| `BriteCore-Dashboards-CFO.docx` | CFO only |
+| `BriteCore-Dashboards-Underwriting-Manager.docx` | Underwriting Manager only |
+
+Publish **all six** `.docx` files in the **same folder** on your help site so links between the main doc and each dashboard resolve. The **single combined** Word file (`BriteCore-Dashboards-Doc.docx`) is unchanged and still built by `./build-docs.sh`.
+
+Source for the overview: **`dashboards-main.md`** (distinct from **`dashboards.md`**, which is the first chapter of the combined doc).
+
 ---
 
 ## Requirements
